@@ -20,7 +20,7 @@ try{
 		foreach ($cursor as $obj) {
 			echo "Name: ". $obj["name"]. "<br/>";
 			echo "Jersey ". $obj["jersey"]. "<br/>";
-			echo "Position ". $obj["position"]. "<br/>";
+			echo "Position ". $obj["position"]. "<br/>"; //since position is an array on my database I will have to convert the array into string
 			echo "<br/>";
 		}
 	}

@@ -8,6 +8,6 @@ The database must have the fields: name, jersey and position for it to work prop
 
 ex
 ========
-Name: Randy Egbert
-Jersey: 44
+Name: Randy Egbert <br>
+Jersey: 44 <br>
 Position: Catcher, First Base

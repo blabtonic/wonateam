@@ -2,4 +2,12 @@ wonateam
 ========
 Simple PHP connecter to a mongoDB database 
 
-still need to convert my array documents from the mongoDB database into string
+What I have done here is create a connection to a mongoDB database using PHP 
+
+The database must have the fields: name, jersey and position for it to work properly. Name is a sting value, jersey is and decimal value and position is an array with sting in there which is the reason why I used the implode method once PHP does detect the required fields it then displays them in a list 
+
+ex
+========
+Name: Randy Egbert
+Jersey: 44
+Position: Catcher, First Base

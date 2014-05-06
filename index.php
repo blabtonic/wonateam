@@ -1,7 +1,8 @@
 <?php
+//error_reporting (E_ALL & ~E_NOTICE);
 try{
 	// a new mongoDB connection	
-	$conn = new Mongo('localhost');
+	$conn = new MongoClient('localhost');
 	
 	//connect to a database Database name: roster
 	$db = $conn->roster;
@@ -20,7 +21,7 @@ try{
 		foreach ($cursor as $obj) {
 			echo "Name: ". $obj["name"]. "<br/>";
 			echo "Jersey ". $obj["jersey"]. "<br/>";
-			echo "Position ". $obj["position"]. "<br/>"; //since position is an array on my database I will have to convert the array into string
+			echo "Position ". implode(",", $obj["position"]). "<br/>"; //implode functions uses the "," to use as seperators then echos the string in the array 
 			echo "<br/>";
 		}
 	}
